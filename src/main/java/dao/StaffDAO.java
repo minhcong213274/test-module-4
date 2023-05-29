@@ -113,6 +113,7 @@ public class StaffDAO implements IStaffDAO {
             statement.setString(4, staff.getPhone());
             statement.setInt(5, staff.getSalary());
             statement.setString(6, staff.getDepartment());
+            statement.setInt(7,staff.getId_staff());
             rowUpdated = statement.executeUpdate() > 0;
         }
         return rowUpdated;
